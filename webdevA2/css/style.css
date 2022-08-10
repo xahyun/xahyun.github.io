@@ -1,0 +1,618 @@
+.p1{
+  margin: 0px;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Navigation bar */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(53, 34, 8);
+  display: flex;
+  position:sticky;
+  top: 0px;
+  width:100%;
+  justify-content: center;
+  z-index: 1;
+}
+
+.topnav a {
+  float: middle;
+  display: block;
+  color: rgb(175, 169, 141);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: rgb(79, 100, 111);
+  color: rgb(175, 169, 141);
+}
+/* 
+.topnav a.active {
+  background-color: rgb(234, 219, 17);
+  color: rgb(0, 0, 0);
+} */
+
+.topnav .icon {
+  display: none;
+}
+.image{
+    height:50px;
+    width:50px;
+}
+
+.flexdown {
+    display: flex;
+    background-color:rgb(175, 169, 141) ;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.left{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.right{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* about page */
+.about{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color:rgb(175, 169, 141);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    align-items: center;
+}
+
+.aboutH{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: 044caa;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    width: 100%;
+    justify-content: center;
+    background-attachment: scroll;
+
+}
+
+.aboutH img{
+    width: 20%;
+    height: 300px;
+}
+
+
+
+/* player page */
+.player{
+  display: flex;
+  flex-direction: wrap;
+  background-color:rgb(175, 169, 141);
+  color: rgb(0, 0, 0);
+  flex-wrap: wrap;
+  width:100%;
+  
+}
+
+.playerC{
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(97, 91, 65);
+  color: rgb(0, 0, 0);
+  flex-wrap: wrap;
+  width:100%;
+  height:50%;
+  
+}
+
+.playerD{
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(175, 169, 141);
+  color: rgb(0, 0, 0);
+  flex-wrap: wrap;
+  width:100%;
+  height:50%;
+  
+}
+
+.playerH{
+  display: flex;
+  flex-wrap: wrap;
+  background-color:rgb(175, 169, 141);
+  background-color: 044caa;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  justify-content: center;
+}
+
+.playerH img{
+  width: 20%;
+  height: 300px;
+}
+
+/* gameplay page */
+.gameplay{
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(175, 169, 141);
+  color: rgb(0, 0, 0);
+  flex-wrap: wrap;
+  width:100%;
+  
+}
+
+
+.gameplayC{
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(97, 91, 65);
+  color: rgb(0, 0, 0);
+  flex-wrap: wrap;
+  width:100%;
+  height:50%;
+  
+}
+
+.gameplayH{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: 044caa;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  justify-content: center;
+  
+}
+
+.gameplayH img{
+  width: 20%;
+  height: 300px;
+}
+.video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  width:100%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*to make all my picture fit into the same size*/
+.square{
+  width:20%;
+  height:20%;
+}
+.square img{
+  object-fit:contain;
+  width: 100%;
+  height: 100%;
+}
+
+.square1{
+  width:30%;
+  height:30%;
+  margin: 20px;
+  
+}
+.square1 .cardcontainer{
+  object-fit:fill;
+  width: 100%;
+}
+
+.position{
+  width:20%;
+  height:20%;
+  margin-bottom: 20px;
+  
+}
+.position img{
+  object-fit:contain;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* slide show */
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle; width:100%;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/*flip cards*/
+.cardcontainer {
+  position: relative;
+  width: 50%;
+}
+
+.cardimage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cardoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.cardoverlay:hover  {
+  opacity: 1;
+}
+
+.cardtext {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* drop down */
+.dropbtn {
+  background-color: rgb(79, 100, 111);
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(61, 75, 83);
+}
+
+.dropdown {
+  display:flex ;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  width:99%;
+  
+}
+
+.dropdown-content {
+  display: none;
+  background-color:rgb(175, 169, 141);
+  width:100%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content div {
+  color: black;
+  padding: 20px 24px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {display: block;}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  line-height: 2.25em;
+  align-items: center;
+  background-color:rgb(175, 169, 141) ;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 10px 5px;
+}
+footer a {
+  font-size: 1.05em;
+  color: black;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+#volleyball
+{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(175, 169, 141);
+  height:50vh;
+  width:100%;
+
+}
+
+#volley_ball
+{ 
+  position: absolute;
+  width:10%;
+  top:40%;
+}
+
+
+
+@keyframes volleyball {
+  0% {top: 40%;}
+  50% {top: 0%;}
+  100% {top: 40%;}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media screen and (max-width: 1300px) {
+  .square{
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .square1{
+    width:30%;
+
+  }
+  .cardtext{
+    font-size: 12px;
+
+  }
+  .cardcontainer{
+    position: relative;
+    width:100%;
+  }
+  .dropdown{
+    flex-wrap: wrap;
+  }
+  .gameplayH img{
+    width: 100%;
+    height: 300px;
+  }
+  .position{
+    width:50%
+  }
+
+}
+
+@media screen and (max-width: 720px) {
+  .square{
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .square1{
+    width:40%;
+
+  }
+  .cardtext{
+    font-size: 10px;
+
+  }
+  .dropdown{
+    flex-wrap: wrap;
+  }
+  .gameplayH img{
+    width: 100%;
+    height: 300px;
+  }
+  .position{
+    width:40%
+  }
+
+  .left{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .right{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+}
+
+@media screen and (max-width: 540px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav div.icon {
+    float: right;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+ .topnav{
+    display: block;
+  } 
+  .aboutH img{
+    width: 100%;
+    height: 300px;
+  }
+  .gameplayH img{
+    width: 100%;
+    height: 300px;
+  }
+  .square{
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .square1{
+    width:40%;
+  }
+
+  .position{
+    width:50%
+  }
+  .cardtext{
+    font-size: 10px;
+  }
+  .cardcontainer{
+    position: relative;
+    width:100%;
+  }
+  .dropdown{
+    flex-wrap: wrap;
+  }
+  .left{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .right{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+
+@media screen and (max-width: 540px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown{
+    flex-wrap: wrap;
+  }
+
+
+}
+
+@media screen and (max-width: 480px) {
+  .square{
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .square1{
+    width:30%;
+
+  }
+  .cardtext{
+    font-size: 7px;
+
+  }
+  .cardcontainer{
+    position: relative;
+    width:100%;
+  }
+  .dropdown{
+    flex-wrap: wrap;
+  }
+  .gameplayH img{
+    width: 100%;
+    height: 300px;
+  }
+  .position{
+    width:50%
+  }
+  .left{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .right{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+

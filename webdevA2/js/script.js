@@ -43,6 +43,9 @@ else if (sPage=="game.html")
   function dropdown(i) {
     
   }
+  
+
+
 
   // Close the dropdown if the user clicks outside of it
   window.onclick = function(event) {
@@ -75,10 +78,37 @@ function myFunction() {
 
 
   function ani() {
-    document.getElementById('volley_ball').style.animation="volleyball 5s infinite";
+    document.getElementById('volley_ball').style.animation="volleyball 2s infinite";
     console.log(document.getElementById('volley_ball'));
 }
 
-  
+if(sPage=="players.html")
+{
+  var press=[];
+  var square = document.querySelectorAll(".square1");
+  var cardoverlay=document.querySelectorAll(".cardoverlay")
+  for(var i=0; i < square.length; i++)
+  {
+    ael(i);
+    press.push(0);
+  }
+  function ael(i){
+    console.log(bar);
+    square[i].addEventListener("click", function (e) {
+      flip(i);
+    });
+  }
+  function flip(i){
+    if(press[i]==1)
+    {
+        cardoverlay[i].style.opacity=0;
+        press[i]=0;
+    }
+    else if(press[i]==0){
+      cardoverlay[i].style.opacity=1;
+      press[i]=1;
+    }
+  }
+}
 
 

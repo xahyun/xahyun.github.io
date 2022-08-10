@@ -313,9 +313,9 @@ img {vertical-align: middle; width:100%;}
   background-color: #008CBA;
 }
 
-.cardoverlay:hover  {
+/* .cardoverlay:hover  {
   opacity: 1;
-}
+} */
 
 .cardtext {
   color: white;
